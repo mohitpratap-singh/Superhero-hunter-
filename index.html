@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SuperHero Hunter</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+       
+       <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 500 200" id="marvel">
+          <path fill="#f0141e" d="M0 0h500v200H0z"></path>
+          <path fill="#fff"
+            d="M423.12 46.619V15.991h-85.706l-14.11 102.282-13.94-102.282h-30.908l3.454 27.312c-3.563-7-16.211-27.312-44.061-27.312-.185-.012-30.945 0-30.945 0l-.128 149.084-22.523-149.084-40.484-.012-23.304 154.467.013-154.455H81.726l-13.965 86.768-13.604-86.768H15.399v167.932h30.523v-80.944l13.886 80.944h16.224l13.69-80.944v80.944h58.838l3.558-25.83h23.688l3.558 25.83 57.771.037h.042v-.037H237.249v-54.504l7.074-1.024 14.661 55.565h29.883l-.012-.037H288.94l-19.238-65.11c9.741-7.179 20.752-25.379 17.822-42.798v-.006c.036.226 18.164 108.026 18.164 108.026l35.534-.11 24.279-152.203v152.203h57.617v-30.199h-27.344v-38.507h27.344v-30.66h-27.344v-37.94h27.346zM155.713 131.47l8.387-71.802 8.69 71.802h-17.077zm88.708-33.155c-2.344 1.123-4.784 1.685-7.172 1.691v-54.01c.037 0 .093-.006.153-.006 2.38-.018 20.203.714 20.203 26.709 0 13.598-6.06 22.174-13.184 25.616zm240.186 55.383v30.188h-56.214V15.967h30.272v137.731h25.942z">
+          </path>
+        </svg>
+        <span id="txt">SUPERHERO HUNTER</span>
+      </a>
+      <div class="fav">
+        <a class="navbar-brand" href="fav.html">Favourites</a>
+      </div>
+    </div>
+  </nav>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <main>
+    <input class="form-control me-2" type="search" placeholder="Search Your Superhero" id="search" />
+   
+
+    <ul id="auto-complete" class="list-group">
+     
+    </ul>
+  </main>
+
+  <div class="container">
+    <div class="img"><img id="img" src="" class="rounded" /></div>
+    <div class="details" id="details">
+      <h3 id="name"></h3>
+      <hr>
+      <div id="work">
+        <br>
+        <div id="base"></div>
+        <div id="occupation"></div>
+      </div>
+
+      <div id="bio">
+      </div>
+      <br>
+
+      <div id="good"></div>
+      <br>
+
+      <div id="powerstats"></div>
+      <hr>
+      <div id="fav">
+        
+        <button id="favbtn" class="btn btn-success" onclick="favpush(this.value)" value={}>Favourite</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
